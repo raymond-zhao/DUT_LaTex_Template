@@ -8,8 +8,6 @@
 % 最后更新：2012.05.07
 % 修改者：Yuri (E-mail: yuri_1985@163.com)
 % 修订者：whufanwei(E-mail: dutfanwei@qq.com)
-% 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
-% 编译环境2：Windows 7 + CTeX v2.9.2.164 + WinEdit
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
@@ -29,7 +27,8 @@
 \setlength{\evensidemargin}{(\mymargin)-1in}
 % 设置正文区偏移量，奇数页向右偏，偶数页向左偏
 \newlength \myshift
-\setlength{\myshift}{0.35cm}	% 双面打印的奇偶页偏移值，可根据需要修改，建议小于 0.5cm
+\setlength{\myshift}{0cm}  % 双面打印的奇偶页偏移值，可根据需要修改，此处不偏移。
+% \setlength{\myshift}{0.35cm}  % 双面打印的奇偶页偏移值，可根据需要修改，建议小于 0.5 cm。
 \addtolength{\oddsidemargin}{\myshift}
 \addtolength{\evensidemargin}{-\myshift}
 % 页眉页脚相关距离设置
@@ -40,7 +39,7 @@
 % 公式的精调
 \allowdisplaybreaks[4]  % 可以让公式在排不下的时候分页排，这可避免页面有大段空白。
 
-% 下面这组命令使浮动对象的缺省值稍微宽松一点，从而防止幅度
+% 下面这组命令使浮动对象的缺省值稍微宽松一点，从而防止浮动。
 % 对象占据过多的文本页面，也可以防止在很大空白的浮动页上放置很小的图形。
 \renewcommand{\topfraction}{0.9999999}
 \renewcommand{\textfraction}{0.0000001}
@@ -50,7 +49,7 @@
 % 字体字号定义
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % 字号
-\newcommand{\yihao}{\fontsize{26pt}{39pt}\selectfont}	  % 一号，1.5  倍行距
+\newcommand{\yihao}{\fontsize{26pt}{39pt}\selectfont}   % 一号，1.5  倍行距
 \newcommand{\xiaoyi}{\fontsize{24pt}{30pt}\selectfont}  % 小一，1.25 倍行距
 \newcommand{\erhao}{\fontsize{22pt}{27.5pt}\selectfont} % 二号，1.25 倍行距
 \newcommand{\xiaoer}{\fontsize{18pt}{22.5pt}\selectfont}% 小二，1.25 倍行距
@@ -61,7 +60,7 @@
 \newcommand{\dawu}{\fontsize{10.5pt}{18pt}\selectfont}  % 五号，1.75倍行距
 \newcommand{\zhongwu}{\fontsize{10.5pt}{16pt}\selectfont}% 五号，1.5 倍行距
 \newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}% 五号，单倍行距
-\newcommand{\xiaowu}{\fontsize{9pt}{9pt}\selectfont}	   % 小五，单倍行距
+\newcommand{\xiaowu}{\fontsize{9pt}{9pt}\selectfont}     % 小五，单倍行距
 
 \newcommand{\song}{\CJKfamily{song}}
 \newcommand{\hei}{\CJKfamily{hei}}
@@ -317,7 +316,7 @@
       \vspace{2.34cm}
       
       {
-     	\xiaoer\xkai
+      \xiaoer\xkai
         大连理工大学\\
         \vspace{0.24cm}
         \xiaosi\song
@@ -352,7 +351,7 @@
     {\sihao\fs 学{\hfill}位{\hfill}论{\hfill}文{\hfill}题{\hfill}目{\hfill}：\fixedunderlinecenter[12.6cm]{\@ctitle}}
     \parbox[t][1.22cm][c]{\textwidth}
     {\sihao\fs 作{\hfill}者{\hfill}签{\hfill}名{\hfill}：\fixeddistanceleft[12.6cm]{\underline{\hspace{5.8cm}}\hfill
-	日期：\underline{\hspace{1.4cm}}~年~{\underline{\hspace{0.7cm}}~月~{\underline{\hspace{0.7cm}}~日~}}}}
+  日期：\underline{\hspace{1.4cm}}~年~{\underline{\hspace{0.7cm}}~月~{\underline{\hspace{0.7cm}}~日~}}}}
   \end{center}
   \renewcommand{\baselinestretch}{1.27}
   \cleardoublepage

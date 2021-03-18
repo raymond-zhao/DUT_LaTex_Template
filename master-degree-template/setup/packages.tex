@@ -10,6 +10,7 @@
 % 修订者：whufanwei(dutfanwei@qq.com) 
 % 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
 % 编译环境2：Windows 7 + CTeX v2.9.2.164 + WinEdit
+% 编译环境3：MacOS 10.15.7 / MacOS Big Sur + BasicTex + Sublime - 2021 年 3 月 10 日
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % 页面设置
@@ -39,7 +40,9 @@
 % 图形相关
 \usepackage{graphicx}            % 请在引用图片时务必给出后缀名
 \usepackage[x11names]{xcolor}    % 支持彩色
-\usepackage[below]{placeins}     % 浮动图形控制宏包
+% 如果希望禁止浮动，可使用 float 宏包，添加 H 选项。
+\usepackage[section]{placeins}     % 浮动图形控制宏包：可禁止图片跨 Section 浮动。
+% \usepackage[below]{placeins}     % 浮动图形控制宏包：图片可能会跨越 Section 浮动，与实际描述文字相距甚远。
 \usepackage{rotating}            % 图形和表格的控制
 \usepackage{subfigure}           % 插入子图形
 \usepackage[subfigure]{ccaption} % 插图表格的双语标题
@@ -78,14 +81,3 @@ CJKbookmarks=true,
 \usepackage[numbers,sort&compress,square,super]{natbib} %参考文献
 \usepackage{hypernat}
 \usepackage{bibentry}
-
-
-
-
-
-
-
-
-
-
-
